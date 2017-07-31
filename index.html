@@ -1,417 +1,242 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title> Express Paiting and decorating | Home</title>
-        <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-        <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-        <!-- Custom Theme files -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="keywords" content="Express Painting and Decorating Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-                                       Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <!-- //Custom Theme files -->
-        <!--web-font-->
-        <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
-        <!--//web-font-->
-        <!-- js -->
-        <script src="js/jquery-1.11.1.min.js"></script> 
-        <!-- //js -->	
-        <!-- start-smoth-scrolling-->
-        <script type="text/javascript" src="js/move-top.js"></script>
-        <script type="text/javascript" src="js/easing.js"></script>	
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $(".scroll").click(function(event){		
-                    event.preventDefault();
-                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-                });
-            });
-        </script>
-        <!--//end-smoth-scrolling-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+        <title>Express Painting & Decorating  | Home page</title>
+        <!-- Loading third party fonts -->
+        <link
+              href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700"
+              rel="stylesheet" type="text/css">
+        <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Loading main css file -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script
+                src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!--[if lt IE 9]>
+<script src="js/ie-support/html5.js"></script>
+<script src="js/ie-support/respond.js"></script>
+<![endif]-->
+
+
     </head>
     <body>
-        <!--banner-->
-        <div class="banner">
-            <!--header-->
-            <div class="top-nav">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <span> </span>
-                        <div class="navbar-header navbar-left">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+        <div id="site-content">
+            <header class="site-header">
+                <div class="bottom-header">
+                    <div class="container">
+
+                        <a href="index.html" class="branding pull-left"> <img class="img-responsive" src="images/gallery/express_logo.png"  height="10%" width="100%" alt="Site title" class="logo-icon">
+                        </a>
+
+                        <!-- #branding -->
+
+                        <nav class="main-navigation pull-right">
+                            <button type="button" class="menu-toggle">
+                                <i class="fa fa-bars"></i>
                             </button>
-                            <h1><a href="index.html">Express Painting & Decorating</a></h1>
-                        </div>
-                        <!--navigation-->
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-left">
-                                <li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
-                                <li class="hvr-bounce-to-bottom"><a href="about.html" >About</a></li>
-                                <!--							<li class="hvr-bounce-to-bottom"><a href="codes.html">Codes</a></li>-->
-                                <li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
-                                <li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
-                            </ul>	
-                            <div class="clearfix"> </div>
-                        </div><!--//navigation-->
-                    </div>	
-                </nav>		
-            </div>	
-            <!--//header-->
-            <div class="social-icons">
-                <ul>
-                    <li><a href="#"> </a></li>
-                    <li><a href="#" class="fb"> </a></li>
-                    <li><a href="#" class="in"> </a></li>
-                    <li><a href="#" class="dott"> </a></li>
-                </ul>
-            </div>
-            <!--banner-info-->
-            <div class="banner-info">
-                <!-- container -->
-                <div class="container">
-                    <!--banner Slider starts Here-->
-                    <script src="js/responsiveslides.min.js"></script>
-                    <script>
-                        // You can also use "$(window).load(function() {"
-                        $(function () {
-                            // Slideshow 3
-                            $("#slider3").responsiveSlides({
-                                auto: true,
-                                pager: false,
-                                nav: true,
-                                speed: 500,
-                                namespace: "callbacks",
-                                before: function () {
-                                    $('.events').append("<li>before event fired.</li>");
-                                },
-                                after: function () {
-                                    $('.events').append("<li>after event fired.</li>");
-                                }
-                            });
+                            <ul class="menu">
+                                <h3>
+                                    <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                                    <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                                    <li class="menu-item"><a href="services.html">Services</a></li>
 
-                        });
-                    </script>
-                    <!--//End-slider-script-->
-                    <div class="bnr-text">
-                        <div  id="top" class="callbacks_container">
-                            <ul class="rslides" id="slider3">
-                                <li>				
-                                    <h2>Find your perfect new dream home</h2>
-
-                                </li>
-                                <li>								
-                                    <h2>Every song is like a painting.</h2>
-
-                                </li>
-                                <li>
-                                    <h2>Painting is just another way of expressing your thoughts</h2>
-
-                                </li>
+                                    <li class="menu-item"><a href="services.html">Gallery</a></li>
+                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                </h3>
                             </ul>
-                        </div>
-                        <!--
-<a href="#" class="more more-left">Learn More</a>
-<a href="gallery.html" class="more more-right">Click</a>
--->
-                    </div>				
-                </div>			
-            </div>			
-        </div>
-        <!--//banner-->
-        <!-- welcome -->
-        <div class="welcome">
-            <!-- container -->
-            <div class="container">
-                <div class="">
-                    <h3 class="title">Welcome</h3>
-                    <h5 class="caption">We are Express Painting & Decorating</h5>
-                    <p>This is to introduce our company Express Painting Services. We deal in Painting your house/ offices/ Commercial Buildings, Painting Textures for Walls, A wide variety of Wallpapers and Waterproofing solutions With Warranty.
-
-                        Our basic job is to complete the Painting and decoration job of your home without anyone’s involvement. So, one doesn’t have to worry about going to Paint shop to buy colors, brushes, rollers or anything else. You just have to sit and relax and let our team do the job. 
-
-                        Our Team provides you Online Color Consultancy and provides the previews of the colors & Textures that you want to put on your walls so that you don’t have to go anywhere and the job is completed on time.
-
-                    </p>
-                </div>
-                <div class="bnr-galry">
-                    <div class="col-md-6 bnr-galry-left">
-                        <div class="view view-eighth vie">
-                            <img src="images/img1.jpg" alt=" " class="img-responsive" />
-                            <div class="mask">
-                                <h4>Letraset sheets</h4>
-                                <p>with the release Letraset sheets Lorem</p>
-                            </div>
-                        </div>					
+                        </nav>
+                        <!-- .main-navigation -->
                     </div>
-                    <div class="col-md-6 bnr-galry-right">
-                        <div class="view view-eighth vie">
-                            <img src="images/img2_0.jpg" alt=" " class="img-responsive" />
-                            <div class="mask">
-                                <h4>Letraset sheets</h4>
-                                <p>with the release Letraset sheets Lorem</p>
-                            </div>
-                        </div>					
-                    </div>
-                    <div class="clearfix"> </div>
+                    <!-- .container -->
                 </div>
-            </div>
-            <!-- //container -->
+                <!-- .bottom-header -->
+            </header>
         </div>
-        <!-- //welcome -->
-        <!--slid-->
-        <div class="container">
-        <div class="footer-grids">
+        <!-- <div class="container"> -->
+        <!-- Carousel -->
+        <!-- </div> -->
+        <!-- .site-header -->
+        <div id="site-content">
+            <main class="content">
+                <div class="breadcrumbs" style="padding-top: 140px"></div>
+                <div id="carousel-example-generic" class="carousel slide"
+                     data-ride="carousel" data-interval="3000">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0"
+                            class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
 
-            <div class="col-md-4 footer-grid">
-                <h3 class="title">What We Offer?</h3>
-                <ul>
-                    <li><a href="#">Paints </a></li>
-                    <li><a href="#">Textures for Walls</a></li>
-                    <li><a href="#">Wallpapers</a></li>
-                    <li><a href="#">Waterproofing Solutions </a></li>
-                </ul>
-            </div>
-            
-            <div class="col-md-4 footer-grid">
-                <h3 class="title">Why Express?</h3>
-                <ul>
-                    <li><a href="#">Work done by efficient machines</a></li>
-                    <li><a href="#">No compramise with Quality </a></li>
-                    <li><a href="#">Large variety of paints </a></li>
-                    <li><a href="#">Free Live preview </a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 footer-grid">
-                <h3 class="title">Feautures</h3>
-                <ul>
-                    <li><a href="#">Wall of Texture Size 10 x 10 for free</a></li>
-                    <li><a href="#">Asian Paints, Berger, Nippon Paints & Dulux</a></li>
-                    <li><a href="#">PREVIEWS of Interior & Exterior of your home</a></li>
-                    <li><a href="#"> Resonable & Affordable cost</a></li>
-                </ul>
-            </div>
-          
-            
-        </div>
-            </div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" src="images/slider1.jpg" alt="..."
+                                 style="height: 50%; width: 100%">
 
-        <div class="slid">
-            <div class="container">			
-                <div class="slid-info">
-                    <h4>Lorem Ipsum was popularised amet</h4>
-                    <p>voluptates repudiandae Integer dolore lorem ipsum was popularised In sit amet sapien eros magna aliqua Temporibus autem quibusdam et aut officiis debitis aut
-                        rerum necessitatibus saepe eveniet</p>
-                </div>
-            </div>	
-        </div>
-        <!--//slid-->
-        <!--team-->
-        <div class="team" id="team">
-            <div class="container">
-                <div class="team-info">
-                    <h3 class="title">What we offer</h3>
-                    <div class="team-grids">
-                        <div class="col-md-6 team-grid team-one">
-                            <div class="team-grid-left">
-                                <h4>Walls & Ceilings</h4>
-                            </div>
-                            <div class="team-grid-right">
-                                <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
-                            </div>
-                            <div class="clearfix"> </div>
                         </div>
-                        <div class="col-md-6 team-grid team-one">
-                            <div class="team-grid-right aliquam">
-                                <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
-                            </div>
-                            <div class="team-grid-left non">
-                                <h4>Mid Range Emulsions</h4>
-                            </div>					
-                            <div class="clearfix"> </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/slider2.jpg" alt="..."
+                                 style="height: 80%; width: 100%">
+
                         </div>
-                        <div class="clearfix"> </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/slider3.jpg" alt="..."
+                                 style="height: 50%; width: 100%">
+
+                        </div>
                     </div>
-                    <div class="team-grids">
-                        <div class="col-md-6 team-grid team-two">
-                            <div class="team-grid-left">
-                                <h4>Luxury Emulsions</h4>				
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic"
+                       role="button" data-slide="prev"> <span
+                                                              class="glyphicon glyphicon-chevron-left"></span>
+                    </a> <a class="right carousel-control" href="#carousel-example-generic"
+                            role="button" data-slide="next"> <span
+                                                                   class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+
+
+                <div class="fullwidth-block feature-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="feature wow fadeInUp">
+                                    <div class="feature-title">
+                                        <i class="icon-customer-service"></i>
+                                        <h1 class="title">
+                                            <b>Welcome to Express</b>
+                                        </h1>
+                                    </div>
+                                    <div class="feature-summary">
+                                        <p class="text-justify">
+                                            We <b>Express Painting & Decorating</b> love to design your 'Dream Home'. We deal in Painting your house/ offices/ Commercial Buildings, Painting Textures for Walls, A wide variety of Wallpapers and Waterproofing solutions With Warranty. Our basic job is to complete the Painting and decoration job of your home without anyone’s involvement. So, one doesn’t have to worry about going to Paint shop to buy colors, brushes, rollers or anything else. You just have to sit and relax and let our team do the job. Our Team provides you Online Color Consultancy and provides the previews of the colors & Textures that you want to put on your walls so that you don’t have to go anywhere and the job is completed on time.
+                                        </p>
+
+                                    </div>
+                                    <a href="about-us.html" class="button">More info</a>
+                                </div>
+                                <!-- .feature --
+</div>
+</div>
+<!-- .row -->
                             </div>
-                            <div class="team-grid-right">
-                                <span class="glyphicon glyphicon glyphicon-globe" aria-hidden="true"></span>
-                            </div>
-                            <div class="clearfix"> </div>
+                            <!-- .container -->
                         </div>
-                        <div class="col-md-6 team-grid team-two">
-                            <div class="team-grid-right aliquam">
-                                <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <!-- .feature-section -->
+
+                        <div class="fullwidth-block pricing-section">
+                            <div class="container">
+                                <div class="col-md-4 col-xs-4 col-us">
+                                    <div class="pricing-table wow fadeInLeft" data-wow-delay=".2s">
+                                        <div class="pricing-title-sg">
+                                            <h2 class="pricing-type">Specialism</h2>
+
+                                        </div>
+                                        <ul class="list-fa">
+                                            <li><i class="fa fa-check"></i>Paints</li>
+
+                                            <li><i class="fa fa-check"></i>Textures of walls</li>
+                                            <li><i class="fa fa-check"></i>Wallpapers</li>
+                                            <li><i class="fa fa-check"></i>Water prrofing Solution</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <!-- .pricing-table -->
+                                </div>
+                                <!-- .row -->
+                                <div class="col-md-4 col-xs-4 col-us">
+                                    <div class="pricing-table wow fadeInUp" data-wow-delay=".2s">
+                                        <div class="pricing-title-sg">
+                                            <h2 class="pricing-type">Features</h2>
+                                        </div>
+                                        <ul class="list-fa">
+                                            <li><i class="fa fa-check"></i> Work done by efficient machines</li>
+                                            <li><i class="fa fa-check"></i>No compramise with Quality</li>
+                                            <li><i class="fa fa-check"></i> Large variety of paints</li>
+                                            <li><i class="fa fa-check"></i> Free Live preview</li>
+                                            <li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-4 col-us">
+                                    <div class="pricing-table wow fadeInRight" data-wow-delay=".2s">
+                                        <div class="pricing-title-sg">
+                                            <h2 class="pricing-type">Work</h2>
+                                        </div>
+                                        <ul class="list-fa">
+                                            <li><i class="fa fa-check"></i> Wall of Texture Size 10 x 10 for FREE</li>
+                                            <li><i class="fa fa-check"></i> Asian Paints, Berger & Dulux</li>
+                                            <li><i class="fa fa-check"></i> Previews of Interior design</li><li><i class="fa fa-check"></i> Resonable & Affordable cost</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="team-grid-left non">
-                                <h4>Luxury Emulsions</h4>
-                            </div>	
-                            <div class="clearfix"> </div>
+
+                            <!-- .container -->
                         </div>
-                        <div class="clearfix"> </div>
+                        <!-- .service-section -->
+                        <!-- .fullwidth-block -->
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--//team-->
-        <!--special-->
-        <div class="special"> 
-            <div class="container">			
-                <div class="col-md-7 special-grids">
-                    <h3 class="title">What we do</h3>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://www.youtube.com/embed/rKa11TYMpmY" allowfullscreen></iframe>
+            </main>
+            <!-- .content -->
+
+            <footer class="site-footer wow fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                           <div class="branding">
+							<img src="images/gallery/express_logo.png" alt="RchScape"
+								class="">
+						</div>
+
+						<p class="copy">
+							<span class="glyphicon glyphicon-copyright-mark"></span> 2017 Express Painting & Decorating. All rights reserved.
+						</p>
+                         
+                        </div>
+
+                        <div class="col-md-6 align-right" style="padding-top: 60px">
+                            <nav class="footer-navigation">
+                                <a href="index.html">Home</a> <a href="about-us.html">About
+                                us</a>
+                                <a href="gallery.html">Gallery</a> <a href="contact.html">Contact</a>
+                            </nav>
+                            <!-- .footer-navigation -->
+
+                            <div class="social-links">
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            <!-- .social-links -->
+
+                        </div>
                     </div>
+
                 </div>
-                <div class="col-md-5 special-grids">
-                    <h3 class="title">Our specialization</h3>
-                    <p>Our Team provides you Online Color Consultancy and provides the previews of the
-                        colors & Textures that you want to put on your walls so that you don’t have to go
-                        anywhere and the job is completed on time.</p>
-                    <h6>Our facilities</h6>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                            60%
-                        </div>
-                    </div>
-                    <h6>Experienced staff</h6>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                            80%
-                        </div>
-                    </div>
-                    <h6>Free consultations</h6>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
-                            90%
-                        </div>
-                    </div>
-                    <h6>Advanced lab tests</h6>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                            75%
-                        </div>
-                    </div>
-                </div>	
-                <div class="clearfix"> </div>
-            </div>
+            </footer>
+            <!-- .site-footer -->
+
         </div>
-        <!--//special-->
-        <!-- footer-->
-        <div class="footer">
-            <div class="container">
-                <div class="footer-grids">
-                    <div class="col-md-3 footer-grid">
-                        <h3 class="title">Flickr Posts</h3>
-                        <div class="footer-grd">
-                            <a href="#">
-                                <img src="images/7.jpg" class="img-responsive" alt=" ">
-                            </a>
-                        </div>
-                        <div class="footer-grd">
-                            <a href="#">
-                                <img src="images/8.jpg" class="img-responsive" alt=" ">
-                            </a>
-                        </div>
-                        <div class="footer-grd">
-                            <a href="#">
-                                <img src="images/9.jpg" class="img-responsive" alt=" ">
-                            </a>
-                        </div>
-                        <div class="clearfix"> </div>
-                        <div class="footer-grd">
-                            <a href="#">
-                                <img src="images/9.jpg" class="img-responsive" alt=" ">
-                            </a>
-                        </div>
-                        <div class="footer-grd">
-                            <a href="#">
-                                <img src="images/7.jpg" class="img-responsive" alt=" ">
-                            </a>
-                        </div>
-                        <div class="footer-grd">
-                            <a href="#">
-                                <img src="images/8.jpg" class="img-responsive" alt=" ">
-                            </a>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="col-md-3 footer-grid">
-                        <h3 class="title">Recent Posts</h3>
-                        <ul>
-                            <li><a href="#">Vestibulum felis</a></li>
-                            <li><a href="#">Mauris at tellus</a></li>
-                            <li><a href="#">Donec ut lectus</a></li>
-                            <li><a href="#">vitae interdum</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 footer-grid">
-                        <h3 class="title">Useful Info</h3>
-                        <ul>
-                            <li><a href="#">Hendrerit quam</a></li>
-                            <li><a href="#">Amet consectetur </a></li>
-                            <li><a href="#">Iquam hendrerit</a></li>
-                            <li><a href="#">Donec ut lectus </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 footer-grid">
-                        <h3 class="title">Contact Us</h3>
+        <!-- #site-content -->
 
-                        <div class="footer-grid-address">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/app.js"></script>
 
-                            <p>Name : Akhil Nirankari</p>
-
-                            <p>Phone no: 08878881122</p>
-
-                            <p>Email : <a class="email-link" href="mailto:example@mail.com"> xpainting@gmail.com</a></p>						
-                        </div>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="clear"> </div>
-        <div class="copy-right">
-            <div class="container">
-                <p>© 2015 Express Painting and Decorating. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-            </div>
-        </div>
-        <!--//footer-->
-        <!--smooth-scrolling-of-move-up-->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                /*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-
-                $().UItoTop({ easingType: 'easeOutQuart' });
-
-            });
-        </script>
-        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-        <!--//smooth-scrolling-of-move-up-->
-        <!-- Bootstrap core JavaScript
-================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/bootstrap.js"></script>
     </body>
+
 </html>
